@@ -4,10 +4,12 @@
   <% if (user) { %>
     <h1>Welcome, <%= user.username %>!</h1>
     <a href="/items">Sample List</a>
+    <a href="/items/show">Shopping List</a>
     <a href="/users">Users</a>
     <a href="/auth/sign-out">Sign out</a>
   <% } else { %>
     <h1>Please sign in!</h1>
+    <a href="/items">Sample List</a>
     <a href="/auth/sign-up">Sign up</a>
     <a href="/auth/sign-in">Sign in</a>
   <% } %>
