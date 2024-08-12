@@ -7,11 +7,14 @@ async function index(req, res) {
         console.log(error)
         res.redirect('/')
     }
-  }
+}
 
 async function show(req,res) {
     try {
-        res.render('items/show')
+        const items = await Item.find({})
+        res.render('items/show',{
+            items,
+    })
     } catch (error) {
         console.log(error)
         res.redirect('/')
@@ -20,17 +23,27 @@ async function show(req,res) {
 
 async function edit(req, res) {
     try {
-      res.render('items/edit', {
-      })
+        res.render('items/edit', {
+        })
     } catch (error) {
-      console.log(error)
-      res.redirect('/items')
+        console.log(error)
+        res.redirect('/items')
     }
-  }
+}
 
+async function create(req, res){
+    try {
+        await Item.create(req.body)
+        res.redirect('/items/edit')
+    } catch (error) {
+        console.log(error)
+        res.redirect('/items/show')
+    }
+}
 
 export {
     index,
     show,
-    edit
-  }
+    edit,
+    create,
+}

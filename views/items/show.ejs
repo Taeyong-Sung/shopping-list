@@ -7,4 +7,15 @@
     <button class="btn">Edit Shopping List</button>
 </a>
 
+<h2><% items.forEach(item => { %>
+    <td><%= item.name %></td>
+    -
+    <td><%= item.store %></td>
+    -
+    <td><%= item.category %></td>
+    -
+    <td><%= item.quantity %></td><br>
+<% }) %>
+</h2>
+
 <%- include('../partials/footer') %>

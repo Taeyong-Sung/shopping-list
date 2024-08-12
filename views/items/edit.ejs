@@ -1,7 +1,41 @@
-<%- include('../partials/html-head') %>
-<%- include('../partials/nav') %>
+<%- include('../partials/html-head') %> <%- include('../partials/nav') %>
 
 <h1>Edit Shopping List</h1>
+
+<form action="/items/edit" method="POST">
+    <label>
+        Name:
+    <input 
+        type="text" 
+        name="name"
+        autocomplete="off" 
+    />
+    </label><br>
+    <label>
+        Store:
+    <input 
+        type="text" 
+        name="store" 
+    />
+    </label><br>
+    <label>
+        Category:
+    <input 
+        type="text"
+        name="category" 
+    />
+    </label><br>
+    <label for="quantity-select">Quantity:</label>
+    <select name="quantity" id="quantity-select">
+    <option value="1" selected>1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    </select><br>
+    <button type="submit">Add to List</button>
+</form>
+
 
 
 
