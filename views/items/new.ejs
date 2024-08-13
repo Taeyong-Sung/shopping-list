@@ -1,9 +1,9 @@
 <%- include('../partials/html-head') %> <%- include('../partials/nav') %>
 
-<h1>Edit Shopping List</h1>
-
+<h1>Add to Shopping List</h1>
+<div>
 <h2>
-<form action="/items/new">
+<form action="/items" method="POST">
     <label>
         Name:
     <input 
@@ -36,6 +36,8 @@
     <button type="submit">Add to List</button>
 </form>
 </h2>
+</div>
+<div>
     <h2><% items.forEach(item => { %>
         <a href="/items/<%= item._id %>/edit">
         <td><%= item.name %></td>
@@ -46,7 +48,7 @@
         -
         <td><%= item.quantity %></td><br></a>
     <% }) %>
-</h2>
-
+    </h2>
+</div>
 
 <%- include('../partials/footer') %>

@@ -36,7 +36,7 @@ async function newItems(req, res) {
 async function create(req, res){
     try {
         await Item.create(req.body)
-        res.redirect('/items/edit')
+        res.redirect('/items/new')
     } catch (error) {
         console.log(error)
         res.redirect('/items/show')
