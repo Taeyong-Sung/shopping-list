@@ -43,5 +43,10 @@
         <button type="submit">Done Edit</button>
     </form>
     </h2>
+<div>
+    <form action="/items/<%= item._id %>?_method=DELETE" method="POST">
+        <button class="btn" type="submit">Delete This Item</button>
+    </form>
+</div>
 
 <%- include('../partials/footer') %>

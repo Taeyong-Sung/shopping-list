@@ -21,6 +21,8 @@ router.post('/', isSignedIn, itemsCtrl.create)
 router.get('/:itemId/edit', isSignedIn, itemsCtrl.edit)
 //items/update
 router.put('/:itemId', isSignedIn, itemsCtrl.update)
+//item/show/delete
+router.delete('/:itemId', isSignedIn, itemsCtrl.delete)
 
 
 export { router }

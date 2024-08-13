@@ -57,11 +57,21 @@ async function edit(req, res) {
 
 async function update(req, res) {
     try {
-        const item = await Item.findByIdAndUpdate(req.params.itemId, req.body);
+        await Item.findByIdAndUpdate(req.params.itemId, req.body);
         res.redirect('/items/new');
     } catch (error) {
         console.log(error);
         res.redirect('/items/show');
+    }
+}
+
+async function deleteItem(req, res) {
+    try {
+        await Item.findByIdAndDelete(req.params.itemId)
+        res.redirect('/items/new')
+    } catch (error) {
+        console.log(error)
+        res.redirect('/items/new')
     }
 }
 
@@ -72,4 +82,5 @@ export {
     edit,
     create,
     update,
+    deleteItem as delete,
 }
