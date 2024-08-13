@@ -7,7 +7,7 @@ const router = Router()
 
 // public routes
 //items/index
-router.get('/', shoppingListsCtrl.index)
+router.get('/sample', shoppingListsCtrl.index)
 
 
 // protected routes //

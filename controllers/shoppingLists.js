@@ -1,5 +1,7 @@
 import { ShoppingList } from "../models/shoppingList.js"
 import { User } from "../models/user.js"
+
+
 async function index(req, res) {
     try {
         res.render('shoppingLists/sample')

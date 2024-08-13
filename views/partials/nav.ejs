@@ -3,9 +3,8 @@
 <nav>
   <% if (user) { %>
     <h1>Welcome, <%= user.username %>!</h1>
-    <a href="/items">Sample List</a>
+    <a href="/shoppingLists/sample">Sample List</a>
     <a href="/users/<%= user._id %>">Shopping Lists</a>
-    <a href="/users">Users</a>
     <a href="/auth/sign-out">Sign out</a>
   <% } else { %>
     <h1>Please sign in!</h1>
