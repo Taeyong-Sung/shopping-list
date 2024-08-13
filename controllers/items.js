@@ -21,9 +21,11 @@ async function show(req,res) {
     }
 }
 
-async function edit(req, res) {
+async function newItems(req, res) {
     try {
-        res.render('items/edit', {
+        const items = await Item.find({})
+        res.render('items/new', {
+        items,
         })
     } catch (error) {
         console.log(error)
@@ -41,9 +43,33 @@ async function create(req, res){
     }
 }
 
+async function edit(req, res) {
+    try {
+        const item = await Item.findById(req.params.itemId);
+        res.render("items/edit", {
+        item,
+    });
+    } catch (error) {
+        console.log(error);
+        res.redirect("/items");
+    }
+}
+
+async function update(req, res) {
+    try {
+        await Item.findByIdAndUpdate(req.params.itemId, req.body);
+        res.redirect('/items/show');
+    } catch (error) {
+        console.log(error);
+        res.redirect('/items/show');
+    }
+}
+
 export {
     index,
+    newItems as new,
     show,
     edit,
     create,
+    update,
 }

@@ -13,10 +13,12 @@ router.get('/', itemsCtrl.index)
 // protected routes //
 //items/show
 router.get('/show', isSignedIn, itemsCtrl.show)
-//items/edit
-router.get('/edit', isSignedIn, itemsCtrl.edit)
+//items/new
+router.get('/new', isSignedIn, itemsCtrl.new)
 //items/edit/create
-router.post('/edit', isSignedIn, itemsCtrl.create)
+router.post('/new', isSignedIn, itemsCtrl.create)
+//items/edit/update
+router.get('/:itemId/edit', isSignedIn, itemsCtrl.edit)
 
 export { router }
 
