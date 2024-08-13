@@ -19,6 +19,9 @@ router.get('/new', isSignedIn, itemsCtrl.new)
 router.post('/', isSignedIn, itemsCtrl.create)
 //items/edit
 router.get('/:itemId/edit', isSignedIn, itemsCtrl.edit)
+//items/update
+router.put('/:itemId', isSignedIn, itemsCtrl.update)
+
 
 export { router }
 

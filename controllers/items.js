@@ -57,8 +57,8 @@ async function edit(req, res) {
 
 async function update(req, res) {
     try {
-        await Item.findByIdAndUpdate(req.params.itemId, req.body);
-        res.redirect('/items/show');
+        const item = await Item.findByIdAndUpdate(req.params.itemId, req.body);
+        res.redirect('/items/new');
     } catch (error) {
         console.log(error);
         res.redirect('/items/show');

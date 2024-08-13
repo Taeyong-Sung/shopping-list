@@ -3,7 +3,7 @@
 <h1>Edit Shopping List</h1>
 
 <h2>
-    <form action="/items/:itemId/update">
+    <form action="/items/<%= item._id %>?_method=PUT" method="POST">
         <label>
             Name:
         <input 
@@ -33,7 +33,7 @@
         name="quantity" 
         id="quantity-select"
         >
-        <option value="0"><%= item.quantity %></option>
+        <option value="<%= item.quantity %>"><%= item.quantity %></option>
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
