@@ -2,12 +2,14 @@
 <%- include('../partials/nav') %>
 
 <h1>Shopping List</h1>
+<h2><%= shoppingList.name %></h2>
 
-<a href="/items/new">
+<!-- <a href="/new">
     <button class="btn">Edit Shopping List</button>
-</a>
+</a> -->
 
-<h2><% items.forEach(item => { %>
+<h2><% shoppingList.items.forEach(item => { %>
+    <a href="/shoppingLists/<%= shoppingList._id %>/items/<%= item._id %>/edit">
     <td><%= item.name %></td>
     -
     <td><%= item.store %></td>
@@ -15,7 +17,7 @@
     <td><%= item.category %></td>
     -
     <td><%= item.quantity %></td><br>
-<% }) %>
-</h2>
+<% }) %></a>
+<a href="/shoppingLists/<%= shoppingList._id %>/new"><button>Add to Shopping List</button></a>
 
 <%- include('../partials/footer') %>

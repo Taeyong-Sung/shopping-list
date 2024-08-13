@@ -1,4 +1,5 @@
 import { User } from "../models/user.js"
+import { ShoppingList } from "../models/shoppingList.js"
 
 async function index(req, res) {
   try {
@@ -14,7 +15,8 @@ async function index(req, res) {
 
 async function show(req, res) {
   try {
-    const selectedUser = await User.findById(req.params.userId)
+    const selectedUser = await User.findById(req.params.userId).populate('shoppingLists')
+    console.log(selectedUser);
     res.render('users/show', {
       selectedUser
     })

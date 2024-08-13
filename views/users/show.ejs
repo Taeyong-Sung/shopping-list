@@ -1,6 +1,19 @@
 <%- include('../partials/html-head') %>
 <%- include('../partials/nav') %>
 
-<h1>You selected <%= selectedUser.username %></h1>
+<h1>Add a Shopping List</h1>
+
+<form action="/shoppingLists" method="POST">
+    <input type="text"
+    name="name"
+    >
+    <button type="submit">Add a Shopping List</button>
+</form>
+
+<h2>
+    <% selectedUser.shoppingLists.forEach(shoppingList => { %>
+        <a href="/shoppingLists/<%= shoppingList._id %>"><%= shoppingList.name %></a><br>
+    <% }) %>
+</h2>
 
 <%- include('../partials/footer') %>

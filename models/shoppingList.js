@@ -19,13 +19,27 @@ quantity: {
         type: Number,
         required: true,
     },
-    owner: {type: Schema.Types.ObjectId, ref: 'User'},
 }, {
 timestamps: true
 })
 
-const Item = mongoose.model("Item", itemSchema)
+
+const shoppingListSchema = new Schema({
+    name: {
+        type: String,
+        required: true,
+    },
+    items: [itemSchema],
+
+    owner: {
+        type: Schema.Types.ObjectId, ref: 'User'
+    },
+})
+
+
+const ShoppingList = mongoose.model("ShoppingList", shoppingListSchema)
 
 export {
-    Item
+    ShoppingList
 }
+

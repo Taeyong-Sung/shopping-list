@@ -5,9 +5,9 @@ import * as usersCtrl from '../controllers/users.js'
 const router = Router()
 
 // public routes
-router.get('/:userId', usersCtrl.show)
 
 // protected routes
+router.get('/:userId', isSignedIn, usersCtrl.show)
 router.get('/', isSignedIn, usersCtrl.index)
 
 export { router }

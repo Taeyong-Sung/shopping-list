@@ -1,9 +1,8 @@
 <%- include('../partials/html-head') %> <%- include('../partials/nav') %>
 
 <h1>Edit Shopping List</h1>
-
 <h2>
-    <form action="/items/<%= item._id %>?_method=PUT" method="POST">
+    <form action="/shoppingLists/<%= shoppingList._id %>/items/<%= item._id %>?_method=PUT" method="POST">
         <label>
             Name:
         <input 
@@ -44,7 +43,7 @@
     </form>
     </h2>
 <div>
-    <form action="/items/<%= item._id %>?_method=DELETE" method="POST">
+    <form action="/shoppingLists/<%= shoppingList._id %>/items/<%= item._id %>?_method=DELETE" method="POST">
         <button class="btn" type="submit">Delete This Item</button>
     </form>
 </div>

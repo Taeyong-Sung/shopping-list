@@ -3,7 +3,7 @@
 <h1>Add to Shopping List</h1>
 <div>
 <h2>
-<form action="/items" method="POST">
+<form action="/shoppingLists/<%= shoppingList._id %>/items" method="POST">
     <label>
         Name:
     <input 
@@ -39,8 +39,8 @@
 </h2>
 </div>
 <div>
-    <h2><% items.forEach(item => { %>
-        <a href="/items/<%= item._id %>/edit">
+    <h2><% shoppingList.items.forEach(item => { %>
+        
         <td><%= item.name %></td>
         -
         <td><%= item.store %></td>
@@ -48,9 +48,10 @@
         <td><%= item.category %></td>
         -
         <td><%= item.quantity %></td>
-        </td><br></a>
+        </td><br>
     <% }) %>
     </h2>
 </div>
+
 
 <%- include('../partials/footer') %>

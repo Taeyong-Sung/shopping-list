@@ -12,6 +12,9 @@ const userSchema = new Schema({
     required: true,
     select: false
   },
+  shoppingLists: [{
+    type: Schema.Types.ObjectId, ref: 'ShoppingList'
+}]
 }, {
   timestamps: true
 })
