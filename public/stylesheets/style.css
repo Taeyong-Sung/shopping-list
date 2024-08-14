@@ -28,6 +28,8 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 form.auth {
