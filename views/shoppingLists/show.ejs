@@ -2,8 +2,9 @@
 <link rel="stylesheet" href="/stylesheets/shoppingLists/show.css"/>
 <%- include('../partials/nav') %>
 
-<h1>Shopping List</h1>
-<h2><%= shoppingList.name %></h2>
+<h1><%= shoppingList.name %></h1>
+<a href="/shoppingLists/<%= shoppingList._id %>/new">
+    <button  id="addButton">Add to Shopping List</button></a>
 <main>
     <table id="list">.
         <thead>
@@ -35,8 +36,7 @@
     </h2>
     </a>
     </table>
-    <a href="/shoppingLists/<%= shoppingList._id %>/new">
-        <button>Add to Shopping List</button>
+
 </main>
 <%- include('../partials/footer') %>
 

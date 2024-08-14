@@ -33,3 +33,6 @@ table {
   #list a:hover {
     background-color: white;
   }
+#addButton {
+  background-color: rgb(194, 191, 191);
+}
