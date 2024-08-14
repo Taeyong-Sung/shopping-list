@@ -16,7 +16,6 @@ async function index(req, res) {
 async function show(req, res) {
   try {
     const selectedUser = await User.findById(req.params.userId).populate('shoppingLists')
-    console.log(selectedUser);
     res.render('users/show', {
       selectedUser
     })

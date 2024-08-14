@@ -44,7 +44,7 @@ async function create(req, res){
         const userOwner = await User.findById(req.body.owner)
         userOwner.shoppingLists.push(shoppingList)
         await userOwner.save()
-        res.redirect(`/shoppingLists/${shoppingList._id}/new`)
+        res.redirect(`/shoppingLists/${shoppingList._id}`)
     } catch (error) {
         console.log(error)
         res.redirect('/shoppingLists/show')

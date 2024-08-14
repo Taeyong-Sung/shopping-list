@@ -17,7 +17,14 @@
     <td><%= item.category %></td>
     -
     <td><%= item.quantity %></td><br>
+    <div>
+        <form action="/shoppingLists/<%= shoppingList._id %>/items/<%= item._id %>?_method=DELETE" method="POST">
+            <button class="btn" type="submit">❌</button>
+        </form>
+    </div>
 <% }) %></a>
-<a href="/shoppingLists/<%= shoppingList._id %>/new"><button>Add to Shopping List</button></a>
+<a href="/shoppingLists/<%= shoppingList._id %>/new">
+    <button>Add to Shopping List</button>
+</a>
 
 <%- include('../partials/footer') %>

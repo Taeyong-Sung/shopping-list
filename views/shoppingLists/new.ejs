@@ -1,6 +1,6 @@
 <%- include('../partials/html-head') %> <%- include('../partials/nav') %>
 
-<h1>Add to Shopping List</h1>
+<h1>Add to List</h1>
 <div>
 <h2>
 <form action="/shoppingLists/<%= shoppingList._id %>/items" method="POST">
@@ -52,6 +52,11 @@
     <% }) %>
     </h2>
 </div>
+
+<a href="/shoppingLists/<%= shoppingList._id %>">
+    <button>Return to Shopping List</button>
+</a>
+
 
 
 <%- include('../partials/footer') %>
