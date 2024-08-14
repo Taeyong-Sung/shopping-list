@@ -103,6 +103,17 @@ async function deleteItem(req, res) {
     }
 }
 
+async function deleteList(req, res) {
+    try {
+        await ShoppingList.findByIdAndDelete(req.params.shoppingListId)
+        const user = await User.findById(req.session.user._id)
+        res.redirect(`/users/${user._id}`);
+    } catch (error) {
+        console.log(error)
+        res.redirect('/users/show')
+    }
+}
+
 export {
     index,
     newItems as new,
@@ -112,4 +123,5 @@ export {
     create,
     update,
     deleteItem as delete,
+    deleteList,
 }

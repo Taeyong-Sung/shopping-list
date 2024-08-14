@@ -19,6 +19,7 @@ router.get('/:shoppingListId', isSignedIn, shoppingListsCtrl.show)
 router.get('/:shoppingListId/items/:itemId/edit', isSignedIn, shoppingListsCtrl.edit)
 router.put('/:shoppingListId/items/:itemId', isSignedIn, shoppingListsCtrl.update)
 router.delete('/:shoppingListId/items/:itemId', isSignedIn, shoppingListsCtrl.delete)
+router.delete('/:shoppingListId', isSignedIn, shoppingListsCtrl.deleteList)
 
 
 export { router }
