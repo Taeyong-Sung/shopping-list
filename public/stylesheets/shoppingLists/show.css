@@ -19,11 +19,13 @@ table {
   
   #list a {
     border-radius: 4px;
-    background-color: #b8c0c2;
+    background-color: rgb(194, 191, 191);
     padding: 4px;
     text-decoration: none;
     font-size: 16px;
     color: #424748;
+    border-radius: 7px;
+
   }
   
   #list a:visited{
@@ -35,4 +37,9 @@ table {
   }
 #addButton {
   background-color: rgb(194, 191, 191);
+}
+.xButton {
+  background-color: rgb(194, 191, 191);
+  border-radius: 7px;
+  font-size: 16px;
 }

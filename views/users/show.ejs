@@ -1,21 +1,27 @@
 <%- include('../partials/html-head') %>
+<link rel="stylesheet" href="/stylesheets/users/show.css"/>
 <%- include('../partials/nav') %>
 
 <h1>Add a Shopping List</h1>
 
-<form action="/shoppingLists" method="POST">
-    <input type="text"
-    name="name"
-    >
-    <button type="submit">Add a Shopping List</button>
-</form>
-
+<div>
+    <form id="addForm" action="/shoppingLists" method="POST">
+        <input type="text"
+        name="name"
+        >
+        <button type="submit">Add a Shopping List</button>
+    </form>
+</div>
 <h2>
-    <% selectedUser.shoppingLists.forEach(shoppingList => { %>
-        <a href="/shoppingLists/<%= shoppingList._id %>"><%= shoppingList.name %></a><br>
-        <form action="/shoppingLists/<%= shoppingList._id %>?_method=DELETE" method="POST">
-            <button>❌</button>
-        </form>
-    <% }) %>    
+    <div id="list">
+        <% selectedUser.shoppingLists.forEach(shoppingList => { %>
+            <div class="shoppingList">
+                <a href="/shoppingLists/<%= shoppingList._id %>"><%= shoppingList.name %></a><br>
+                <form action="/shoppingLists/<%= shoppingList._id %>?_method=DELETE" method="POST">
+                    <button>❌</button>
+                </form>
+            </div>
+        <% }) %>
+    </div>    
 </h2>
 <%- include('../partials/footer') %>
