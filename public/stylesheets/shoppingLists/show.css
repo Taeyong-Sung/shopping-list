@@ -1,6 +1,9 @@
+h1{
+  text-align: center;
+}
+
 table {
     font-size: 14px;
-
   }
   
   table thead th {
@@ -38,6 +41,12 @@ table {
   }
 #addButton {
   background-color: rgb(194, 191, 191);
+  display: flex;
+  margin: 20px auto;
+  padding: 2px 5px;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 5px;
 }
 .xButton {
   background-color: rgb(194, 191, 191);
