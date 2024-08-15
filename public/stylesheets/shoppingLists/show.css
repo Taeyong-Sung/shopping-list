@@ -1,6 +1,5 @@
 table {
-    font-size: 20px;
-    justify-content: left;
+    font-size: 14px;
   }
   
   table thead th {
@@ -26,6 +25,7 @@ table {
     font-size: 16px;
     color: #424748;
     border-radius: 7px;
+    font-size: 12px;
 
   }
   
@@ -42,5 +42,8 @@ table {
 .xButton {
   background-color: rgb(194, 191, 191);
   border-radius: 7px;
-  font-size: 16px;
+  font-size: 14px;
 }
+
+
+

@@ -23,7 +23,7 @@
                     <td><%= item.category %></td>
                     <td><%= item.quantity %></td>
                     <td>
-                        <a href="/shoppingLists/<%= shoppingList._id %>/items/<%= item._id %>/edit">Edit</a>
+                        <a id="editButton" href="/shoppingLists/<%= shoppingList._id %>/items/<%= item._id %>/edit">Edit</a>
                     </td>
                     <td>
                         <form action="/shoppingLists/<%= shoppingList._id %>/items/<%= item._id %>?_method=DELETE" method="POST">
