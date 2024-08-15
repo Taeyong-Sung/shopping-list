@@ -3,43 +3,45 @@
 <%- include('../partials/nav') %>
 
 <h1>Add to List</h1>
-<div>
-<h2>
-    <form action="/shoppingLists/<%= shoppingList._id %>/items" method="POST">
-        <label>
-            Name:
-        <input 
-            type="text" 
-            name="name"
-        />
-        </label><br>
-        <label>
-            Store:
-        <input 
-            type="text" 
-            name="store" 
-        />
-        </label><br>
-        <label>
-            Category:
-        <input 
-            type="text"
-            name="category" 
-        />
-        </label><br>
-        <label for="quantity-select">Quantity:</label>
-        <select name="quantity" id="quantity-select">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        </select>
-        <br>
-        <button  id="button" type="submit">Add to List</button>
-    </form>
-</h2>
-</div>
+<main>
+    <div>
+    <h2>
+        <form action="/shoppingLists/<%= shoppingList._id %>/items" method="POST">
+            <label>
+                Name:
+            <input 
+                type="text" 
+                name="name"
+            />
+            </label><br>
+            <label>
+                Store:
+            <input 
+                type="text" 
+                name="store" 
+            />
+            </label><br>
+            <label>
+                Category:
+            <input 
+                type="text"
+                name="category" 
+            />
+            </label><br>
+            <label for="quantity-select">Quantity:</label>
+            <select name="quantity" id="quantity-select">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            </select>
+            <br>
+            <button  id="button" type="submit">Add to List</button>
+        </form>
+    </h2>
+    </div>
+</main>
 <div>
     <h2><% shoppingList.items.forEach(item => { %>
         

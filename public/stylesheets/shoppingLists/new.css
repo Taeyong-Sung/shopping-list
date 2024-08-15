@@ -21,3 +21,10 @@ input[type=text] {
     margin: 8px 0;
     border: 2px solid black;
 }
+
+form {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: right;
+}
+
