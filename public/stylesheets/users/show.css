@@ -27,3 +27,9 @@ h2{
     border-radius: 7px;
     font-size: 14px;
 }
+
+input[type=text] {
+    padding: 2px 6px;
+    margin: 8px 0;
+    border: 2px solid black;
+}
