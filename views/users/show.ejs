@@ -9,7 +9,7 @@
         <input type="text"
         name="name"
         >
-        <button type="submit">Add a Shopping List</button>
+        <button id="button" type="submit">Add a Shopping List</button>
     </form>
 </div>
 <h2>
@@ -18,7 +18,7 @@
             <div class="shoppingList">
                 <a href="/shoppingLists/<%= shoppingList._id %>"><%= shoppingList.name %></a><br>
                 <form action="/shoppingLists/<%= shoppingList._id %>?_method=DELETE" method="POST">
-                    <button>❌</button>
+                    <button id="button">❌</button>
                 </form>
             </div>
         <% }) %>

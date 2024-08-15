@@ -8,3 +8,9 @@ h2 {
     padding: 70px 0;
     text-align: center;
 }
+
+#editButton{
+    background-color: rgb(194, 191, 191);
+    border-radius: 7px;
+    font-size: 14px;
+}

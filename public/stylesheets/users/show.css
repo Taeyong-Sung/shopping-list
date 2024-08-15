@@ -21,3 +21,9 @@ h2{
     align-items: center;
     gap: 10px;
 }
+
+#button{
+    background-color: rgb(196, 193, 193);
+    border-radius: 7px;
+    font-size: 14px;
+}
