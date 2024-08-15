@@ -1,5 +1,6 @@
 table {
     font-size: 20px;
+    display: flex;
   }
   
   table thead th {
