@@ -65,3 +65,13 @@ button[type=submit] {
 #inputText {
   font-size: 16px;
 }
+
+
+#text {
+border-right-style: solid;
+border-left-style: solid;
+padding-left: 10px;
+padding-right: 10px;
+margin-left: 10px;
+margin-right: 10px;
+}
