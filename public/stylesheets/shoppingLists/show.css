@@ -16,7 +16,6 @@ table {
     text-align: center;
   }
   
-  
   #list a {
     border-radius: 4px;
     background-color: rgb(194, 191, 191);
@@ -29,7 +28,6 @@ table {
     display: flex;
     align-items: center;
     justify-content: space-around;
-
   }
   
   #list a:visited{
