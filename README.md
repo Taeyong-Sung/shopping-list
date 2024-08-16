@@ -1,63 +1,42 @@
-# MEN Stack with Session Auth Template
+# <center> **Welcome to My Shopping-List** </center>
 
-This is a MEN Stack session auth template.
+## By: Taeyong Sung
 
-Use this to go build things! 🚀
+## Description
+![image](https://github.com/user-attachments/assets/a42d2f37-58d3-4f4e-ac79-32a00ec7f675)
+![image](https://github.com/user-attachments/assets/e9911ae0-8927-4bff-8278-85713245a4d6)
+![image](https://github.com/user-attachments/assets/b38c934d-2400-4b55-9124-74e99a566050)
+![image](https://github.com/user-attachments/assets/a09dd7ed-e1c2-472e-8594-67f1f803d552)
 
-## To Use This Template
+Users of this app can create private shopping lists that are visible only to them by logging in. None of the user-made lists can be seen, edited, or deleted by other users. Every user has the ability to make as many shopping lists as they like, and within each shopping list, they may add, edit, view, and delete individual products.
 
-__Replace `<name-of-your-app-here>` (including the `<` and `>`) in the commands below with the name of your app!__
+> ## Motivation/Inspiration:
+I wanted to create a user-friendly application that could list items within each shopping list and categorize them. Every time we go shopping, we frequently forget what we actually needed. I wanted to develop an app that would allow us to keep track of the supplies we will need for our shopping trip!
 
-```bash
-git clone https://github.com/SEI-Remote/men-stack-session-auth-template.git <name-of-your-app-here>
-cd <name-of-your-app-here>
-```
+> ## Let's get started!
 
-Once you are in the project directory:
 
-```bash
-rm -rf .git
-```
+# **[App Here](https://syopinglist-56262e06c255.herokuapp.com/)** 
 
-Here's what your command line output should like after this step (note that the indicator that we are in a git repository is gone!)
 
-<img src="https://i.imgur.com/L47kNOZ.png" alt="The command line before and after running the rm -rf .git command. Before git:(main) is visible indiating that the directory contains a git repository, after the command it is not.">
 
-Re-initialize a git repository:
+Project planning link : [Trello Board](https://trello.com/b/IHPtyUYa/taes-trello-board).
 
-```bash
-git init
-```
+> ## Attributions:
+* [ChatGPT](https://chatgpt.com/) : Image on cover page.
 
-Create a repo for this project on GitHub and add that remote to your project with `git remote add origin Your-repo-URL-here`.
+> ## Technologies used: 
 
-Run npm i to fetch the template's dependencies:
+![HTML](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
+![HEROKU](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
+![NODE.JS](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![MONGODB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
 
-```bash
-npm i
-```
+> ## Future goals to add to the game (ICEBOX):
+* Appoint an admin to manage the application. The administrator will have the ability to see every user and remove anything from the app.
+* The ability for the user to filter by each store in order to buy the item
+* Include an API database with the average cost of every item.
 
-touch a .env file:
 
-```bash
-touch .env
-```
 
-Fill it with the following:
 
-```
-DATABASE_URL=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-SESSION_SECRET=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-```
-
-Replace the `DATABASE_URL` and `SESSION_SECRET` with values that you provide.
-
-Delete this `README.md` file and finally, make an initial commit:
-
-```bash
-git add .
-git commit -m "initial commit"
-git push origin main
-```
-
-You're done!
