@@ -7,9 +7,15 @@ h1 {
 }
 
 #button{
-    background-color: rgb(196, 193, 193);
-    border-radius: 7px;
+    background-color: rgb(194, 191, 191);
     font-size: 14px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+
+#button:hover{
+    background-color: rgb(161, 161, 161);
 }
 
 input[type=text] {
@@ -19,22 +25,24 @@ input[type=text] {
 }
 
 .card-container {
-    display: inline-block;
+    display: flex;
     text-align: center;
     border-radius: 5px;
     line-height: 4rem;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     margin: 0;
+    max-width: fit-content;
 }
 
 .card {
-    width: 200px;
+    width: 180px;
     height: 100px;
     margin: 10px;
-    padding: 20px;
     font-size: 16px;
     background-color: #697277;
+    border: 2px solid rgba(0, 0, 0, 0.644);
 }
 
 .card:hover {
@@ -42,8 +50,8 @@ input[type=text] {
 }
 
 .card-text {
+    margin-top: 5px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
