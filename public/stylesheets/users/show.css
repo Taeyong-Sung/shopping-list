@@ -2,24 +2,8 @@ h1 {
     text-align: center;
 }
 
-h2{
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-}
-
 #addForm{
     text-align: center;
-}
-
-#list {
-    flex-direction: column;
-}
-
-.shoppingList {
-    display: flex;
-    align-items: center;
-    gap: 10px;
 }
 
 #button{
@@ -32,4 +16,40 @@ input[type=text] {
     padding: 2px 6px;
     margin: 8px 0;
     border: 2px solid black;
+}
+
+.card-container {
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+    line-height: 4rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.card {
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    padding: 20px;
+    font-size: 16px;
+    background-color: #697277;
+}
+
+.card:hover {
+    background: #51585c;
+}
+
+.card-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

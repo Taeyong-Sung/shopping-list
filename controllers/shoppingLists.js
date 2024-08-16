@@ -92,13 +92,7 @@ async function edit(req, res) {
 
 async function update(req, res) {
     try {
-        const shoppingList = await ShoppingList.findById(req.params.shoppingListId).populate('items')
-        const itemExists = shoppingList.items.some(item => { 
-            return item.name.toLowerCase() === req.body.name.toLowerCase()
-        })
-        if (itemExists) {
-            return res.send('Item of same name already exists.')
-        }
+        const shoppingList = await ShoppingList.findByIdAndUpdate(req.params.shoppingListId)
         const item = shoppingList.items.id(req.params.itemId)
         item.set(req.body)
         await shoppingList.save()

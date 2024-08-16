@@ -26,3 +26,10 @@ form {
     padding-right: 10px;
     text-align: right;
 }
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}

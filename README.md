@@ -4,10 +4,6 @@
 
 ## Description
 ![image](https://github.com/user-attachments/assets/6f3b4dab-6cd9-4072-b442-50ae21636a3f)
-![image](https://github.com/user-attachments/assets/a42d2f37-58d3-4f4e-ac79-32a00ec7f675)
-![image](https://github.com/user-attachments/assets/e9911ae0-8927-4bff-8278-85713245a4d6)
-![image](https://github.com/user-attachments/assets/b38c934d-2400-4b55-9124-74e99a566050)
-![image](https://github.com/user-attachments/assets/a09dd7ed-e1c2-472e-8594-67f1f803d552)
 
 Users of this app can create private shopping lists that are visible only to them by logging in. None of the user-made lists can be seen, edited, or deleted by other users. Every user has the ability to make as many shopping lists as they like, and within each shopping list, they may add, edit, view, and delete individual products.
 
@@ -32,6 +28,8 @@ Project planning link : [Trello Board](https://trello.com/b/IHPtyUYa/taes-trello
 ![HEROKU](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
 ![NODE.JS](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 ![MONGODB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+![EXPRESS.JS](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
+![SESSION-AUTH](https://img.shields.io/badge/Session-000000.svg?style=for-the-badge&logo=Session&logoColor=white)
 
 > ## Future goals to add to the game (ICEBOX):
 * Appoint an admin to manage the application. The administrator will have the ability to see every user and remove anything from the app.

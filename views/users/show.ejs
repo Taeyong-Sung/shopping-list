@@ -3,7 +3,6 @@
 <%- include('../partials/nav') %>
 
 <h1>Add a Shopping List</h1>
-
 <h2>
     <div>
     <form id="addForm" action="/shoppingLists" method="POST">
@@ -14,16 +13,22 @@
     </form>
     </div>
 </h2>
-<h2>
-    <div id="list">
-        <% selectedUser.shoppingLists.forEach(shoppingList => { %>
-            <div class="shoppingList">
-                <a href="/shoppingLists/<%= shoppingList._id %>"><%= shoppingList.name %></a><br>
-                <form action="/shoppingLists/<%= shoppingList._id %>?_method=DELETE" method="POST">
-                    <button id="button">❌</button>
-                </form>
-            </div>
-        <% }) %>
-    </div>    
-</h2>
+<main>
+    <h2>
+        <div class="card-container">
+            <% selectedUser.shoppingLists.forEach(shoppingList => { %>
+                <div class="card">
+                    <div class="card-text">
+                        <a href="/shoppingLists/<%= shoppingList._id %>"><%= shoppingList.name %></a><br>
+                    </div>
+                    <div class="card-button">
+                        <form action="/shoppingLists/<%= shoppingList._id %>?_method=DELETE" method="POST">
+                                    <button id="button">❌</button>
+                        </form>
+                    </div>
+                </div>
+            <% }) %>
+        </div>   
+    </h2>
+</main>
 <%- include('../partials/footer') %>

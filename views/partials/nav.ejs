@@ -2,14 +2,14 @@
 <body>
 <nav>
   <% if (user) { %>
-    <h1>Welcome, <%= user.username %>!</h1>
-    <a id='text' href="/shoppingLists/sample">Sample List</a>
-    <a id='text' href="/users/<%= user._id %>">Shopping Lists</a>
-    <a id='text' href="/auth/sign-out">Sign out</a>
+    <h4>Welcome, <%= user.username %>!</h4>
+    <a id='navBar' href="/shoppingLists/sample">Sample List</a>
+    <a id='navBar' href="/users/<%= user._id %>">My Lists</a>
+    <a id='navBar' href="/auth/sign-out">Sign out</a>
   <% } else { %>
     <h1>Please sign in!</h1>
-    <a id='text' href="/shoppingLists/sample">Sample List</a>
-    <a id='text'href="/auth/sign-up">Sign up</a>
-    <a id='text' href="/auth/sign-in">Sign in</a>
+    <a id='navBar' href="/shoppingLists/sample">Sample List</a>
+    <a id='navBar'href="/auth/sign-up">Sign up</a>
+    <a id='navBar' href="/auth/sign-in">Sign in</a>
   <% } %>
 </nav>

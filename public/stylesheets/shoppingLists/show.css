@@ -29,22 +29,16 @@ table {
     align-items: center;
     justify-content: space-around;
   }
-  
-  #list a:visited{
-    color: #424748;
-  }
-  
-  #list a:hover {
-    background-color: white;
-  }
+
 #addButton {
   background-color: rgb(194, 191, 191);
-  display: flex;
   margin: 20px auto;
-  padding: 2px 5px;
-  text-align: center;
-  font-size: 12px;
+  padding: 10px 10px;
+  font-size: 13px;
   border-radius: 5px;
+  margin: 0 auto;
+  text-decoration: none;
+  
 }
 .xButton {
   background-color: rgb(194, 191, 191);
@@ -55,8 +49,9 @@ table {
   justify-content: space-around;
 }
 
-main {
+main{
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
-

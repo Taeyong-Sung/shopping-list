@@ -36,3 +36,10 @@ table td {
 #addButton {
     background-color: rgb(194, 191, 191);
 }
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}

@@ -3,10 +3,10 @@
 <%- include('../partials/nav') %>
 
 <h1><%= shoppingList.name %></h1>
-<a href="/shoppingLists/<%= shoppingList._id %>/new">
-    <button  id="addButton">Add to Shopping List</button></a>
 <main>
-    <table id="list">.
+    <a href="/shoppingLists/<%= shoppingList._id %>/new">
+        <button  id="addButton">Add to Shopping List</button></a>
+    <table id="list">
         <thead>
             <tr>
                 <th>Name</th>
@@ -18,18 +18,18 @@
         <tbody>
             <% shoppingList.items.forEach(item => { %>
             <tr>
-                    <td><%= item.name %></td>
-                    <td><%= item.store %></td>
-                    <td><%= item.category %></td>
-                    <td><%= item.quantity %></td>
-                    <td>
-                        <a id="editButton" href="/shoppingLists/<%= shoppingList._id %>/items/<%= item._id %>/edit">Edit</a>
-                    </td>
-                    <td>
-                        <form action="/shoppingLists/<%= shoppingList._id %>/items/<%= item._id %>?_method=DELETE" method="POST">
-                            <button class="xButton" type="submit">❌</button>
-                        </form>
-                    </td>
+                <td><%= item.name %></td>
+                <td><%= item.store %></td>
+                <td><%= item.category %></td>
+                <td><%= item.quantity %></td>
+                <td>
+                    <a id="editButton" href="/shoppingLists/<%= shoppingList._id %>/items/<%= item._id %>/edit">Edit</a>
+                </td>
+                <td>
+                    <form action="/shoppingLists/<%= shoppingList._id %>/items/<%= item._id %>?_method=DELETE" method="POST">
+                        <button class="xButton" type="submit">❌</button>
+                    </form>
+                </td>
             </tr>
             <% }) %>
         </tbody>
