@@ -2,6 +2,7 @@
 <body>
 <nav>
   <% if (user) { %>
+    <h4><i id="navBarShoppingCart" class="fa-solid fa-cart-shopping"></i></h4>
     <h4>Welcome, <%= user.username %>!</h4>
     <a id='navBar' href="/shoppingLists/sample">Sample List</a>
     <a id='navBar' href="/users/<%= user._id %>">My Lists</a>

@@ -6,16 +6,19 @@ h1 {
 h2 {
     text-align: center;
     font-size: 18px;
-    text-align: center;
 }
 
-#button{
+#editButton{
     background-color: rgb(194, 191, 191);
-    border-radius: 7px;
-    font-size: 16px;
+    font-size: 14px;
     display: flex;
-    margin: auto;
-    margin-top: 16px;
+    padding: 7px 7px;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+
+#editButton:hover{
+    background-color: rgb(161, 161, 161);
 }
 
 input[type=text] {

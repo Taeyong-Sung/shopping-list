@@ -86,3 +86,11 @@ button[type=submit] {
   margin-right: 10px;
   text-decoration: none
 }
+
+a {
+  text-decoration: none;
+}
+
+#navBarShoppingCart {
+  font-size: 30px;
+}

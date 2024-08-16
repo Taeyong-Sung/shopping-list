@@ -42,11 +42,9 @@ table {
 }
 .xButton {
   background-color: rgb(194, 191, 191);
-  border-radius: 7px;
-  font-size: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  border-radius: 5px;
+  font-size: 18px;
+  color: rgba(255, 0, 0, 0.705);
 }
 
 main{
@@ -54,4 +52,9 @@ main{
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+
+#editButton{
+  color:black;
+  font-size: 18px;
 }

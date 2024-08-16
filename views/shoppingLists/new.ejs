@@ -37,29 +37,29 @@
                 <option value="5">5</option>
                 </select>
                 <br>
-                <button  id="button" type="submit">Add to List</button>
+                <button  id="addButton" type="submit">Add to List</button>
             </form>
         </h2>
     </div>
+    <div>
+        <h2><% shoppingList.items.forEach(item => { %>
+            
+            <td><%= item.name %></td>
+            -
+            <td><%= item.store %></td>
+            -
+            <td><%= item.category %></td>
+            -
+            <td><%= item.quantity %></td>
+            </td><br>
+        <% }) %>
+        </h2>
+    </div>
+    <div>
+        <a href="/shoppingLists/<%= shoppingList._id %>">
+            <button  id="returnButton" >Return to Shopping List</button>
+        </a>
+    </div>
 </main>
-<div>
-    <h2><% shoppingList.items.forEach(item => { %>
-        
-        <td><%= item.name %></td>
-        -
-        <td><%= item.store %></td>
-        -
-        <td><%= item.category %></td>
-        -
-        <td><%= item.quantity %></td>
-        </td><br>
-    <% }) %>
-    </h2>
-</div>
-<div id="returnButton">
-    <a id="returnButton" href="/shoppingLists/<%= shoppingList._id %>">
-        <button  id="button" >Return to Shopping List</button>
-    </a>
-</div>
 
 <%- include('../partials/footer') %>
