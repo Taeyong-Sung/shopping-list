@@ -3,7 +3,7 @@
 ![image](https://github.com/user-attachments/assets/a1d26dc7-350c-4d02-9bcb-f655e11a7d49)
 
 > ## Motivation
-Every time we go shopping, we frequently forget what we actually needed. I wanted to develop an app that would allow us to keep track of the supplies we will need for our shopping trip! My goal was to create a user-friendly application that could list items within each shopping list and categorize them. 
+Every time we go shopping, we frequently forget what we actually needed. I wanted to develop an app that would allow us to keep track of the supplies we will need for our shopping trip, my goal was to create a user-friendly application that could list items within each shopping list and categorize them.
 
 > ## Description
 Users of this app can create private shopping lists that are visible only to them by logging in. None of the user-made lists can be seen, edited, or deleted by other users. Every user has the ability to make as many shopping lists as they like, and within each shopping list, they may add, edit, view, and delete individual products.
