@@ -5,6 +5,7 @@ import * as usersCtrl from '../controllers/users.js'
 const router = Router()
 
 // public routes
+router.get('/', usersCtrl.index)
 
 // protected routes
 router.get('/:userId', isSignedIn, usersCtrl.show)

@@ -7,13 +7,14 @@ table {
   }
   
   table thead th {
-    padding: 5px;
+    padding: 3px;
     border-bottom: 2px solid #424748;
   }
   
   table td {
     padding: 10px;
     text-align: center;
+    font-size: 14px;
   }
   
   #list a {
@@ -21,10 +22,9 @@ table {
     background-color: rgb(194, 191, 191);
     padding: 4px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     color: #424748;
     border-radius: 7px;
-    font-size: 12px;
     display: flex;
     align-items: center;
     justify-content: space-around;

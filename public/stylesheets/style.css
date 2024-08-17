@@ -35,7 +35,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: bold;
   padding: 0px;
   margin: 0px;
@@ -43,7 +43,9 @@ nav {
 
 #navBar {
   text-decoration: none;
-  color: whitesmoke;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 form.auth {
@@ -84,7 +86,7 @@ button[type=submit] {
   padding-right: 10px;
   margin-left: 10px;
   margin-right: 10px;
-  text-decoration: none
+  text-decoration: none;
 }
 
 a {
@@ -93,4 +95,7 @@ a {
 
 #navBarShoppingCart {
   font-size: 30px;
+  text-decoration: none;
+  color: black;
+  padding-right: 20px;
 }
