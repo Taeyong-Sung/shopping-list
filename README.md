@@ -4,6 +4,10 @@
 
 ## Description
 ![image](https://github.com/user-attachments/assets/a1d26dc7-350c-4d02-9bcb-f655e11a7d49)
+![image](https://github.com/user-attachments/assets/da6e9aac-9acc-4bf6-8e61-1701eaeb6ae9)
+![image](https://github.com/user-attachments/assets/82e26f55-9cc9-4752-b340-5eb05e0ab946)
+![image](https://github.com/user-attachments/assets/dddcdcc6-8a33-4276-ae03-c7f25068f448)
+![image](https://github.com/user-attachments/assets/1be06981-391a-433d-ae1e-4dea1651f437)
 
 
 Users of this app can create private shopping lists that are visible only to them by logging in. None of the user-made lists can be seen, edited, or deleted by other users. Every user has the ability to make as many shopping lists as they like, and within each shopping list, they may add, edit, view, and delete individual products.
