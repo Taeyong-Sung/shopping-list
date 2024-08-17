@@ -3,7 +3,8 @@
 ## By: Taeyong Sung
 
 ## Description
-![image](https://github.com/user-attachments/assets/6f3b4dab-6cd9-4072-b442-50ae21636a3f)
+![image](https://github.com/user-attachments/assets/a1d26dc7-350c-4d02-9bcb-f655e11a7d49)
+
 
 Users of this app can create private shopping lists that are visible only to them by logging in. None of the user-made lists can be seen, edited, or deleted by other users. Every user has the ability to make as many shopping lists as they like, and within each shopping list, they may add, edit, view, and delete individual products.
 
