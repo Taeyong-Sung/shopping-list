@@ -21,7 +21,6 @@ I wanted to create a user-friendly application that could list items within each
 # **[App Here](https://syopinglist-56262e06c255.herokuapp.com/)** 
 
 
-
 Project planning link : [Trello Board](https://trello.com/b/IHPtyUYa/taes-trello-board).
 
 > ## Attributions:
@@ -37,7 +36,7 @@ Project planning link : [Trello Board](https://trello.com/b/IHPtyUYa/taes-trello
 ![EXPRESS.JS](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
 ![SESSION-AUTH](https://img.shields.io/badge/Session-000000.svg?style=for-the-badge&logo=Session&logoColor=white)
 
-> ## Future goals to add to the game (ICEBOX):
+> ## Future goals to add to the app (ICEBOX):
 * Appoint an admin to manage the application. The administrator will have the ability to see every user and remove anything from the app.
 * The ability for the user to filter by each store in order to buy the item
 * Include an API database with the average cost of every item.
