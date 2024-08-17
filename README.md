@@ -20,7 +20,7 @@ Project planning link : [Trello Board](https://trello.com/b/IHPtyUYa/taes-trello
 * [ChatGPT](https://chatgpt.com/) : Image on cover page.
 * [Fontawsome](https://fontawesome.com/) : Icons in the app.
 
-> ## Technologies used: 
+> ## Technologies used
 
 ![HTML](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
 ![HEROKU](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
@@ -29,9 +29,9 @@ Project planning link : [Trello Board](https://trello.com/b/IHPtyUYa/taes-trello
 ![EXPRESS.JS](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
 ![SESSION-AUTH](https://img.shields.io/badge/Session-000000.svg?style=for-the-badge&logo=Session&logoColor=white)
 
-> ## Future goals to add to the app (ICEBOX):
+> ## Future goals to add to the app (ICEBOX)
 * Appoint an admin to manage the application. The administrator will have the ability to see every user and remove anything from the app.
-* The ability for the user to filter by each store in order to buy the item
+* The ability for the user to filter by each store in order to buy the item.
 * Include an API database with the average cost of every item.
 
 
