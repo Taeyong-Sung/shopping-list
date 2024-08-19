@@ -13,7 +13,7 @@ async function index(req, res) {
 
 async function show(req,res) {
     try {
-        const shoppingList = await ShoppingList.findById(req.params.shoppingListId).populate(["items","owner"])
+        const shoppingList = await ShoppingList.findById(req.params.shoppingListId).populate("owner")
         const isOwner = shoppingList.owner._id.equals(req.session.user._id)
         res.render('shoppingLists/show',{
             shoppingList,
@@ -27,7 +27,7 @@ async function show(req,res) {
 
 async function newItems(req, res) {
     try {
-        const shoppingList = await ShoppingList.findById(req.params.shoppingListId).populate('items')
+        const shoppingList = await ShoppingList.findById(req.params.shoppingListId)
         res.render('shoppingLists/new', {
             shoppingList,
         })
@@ -59,7 +59,7 @@ async function create(req, res){
 
 async function createItems(req, res){
     try {
-        const shoppingList = await ShoppingList.findById(req.params.shoppingListId).populate('items')
+        const shoppingList = await ShoppingList.findById(req.params.shoppingListId)
         const itemExists = shoppingList.items.some(item => 
             item.name.toLowerCase() === req.body.name.toLowerCase()
         )
@@ -75,10 +75,9 @@ async function createItems(req, res){
     }
 }
 
-
 async function edit(req, res) {
     try {
-        const shoppingList = await ShoppingList.findById(req.params.shoppingListId).populate(['owner','items'])
+        const shoppingList = await ShoppingList.findById(req.params.shoppingListId).populate('owner')
         const item = shoppingList.items.id(req.params.itemId)
         res.render("shoppingLists/edit", {
         shoppingList,

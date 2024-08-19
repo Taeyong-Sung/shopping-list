@@ -1,5 +1,4 @@
 import { User } from "../models/user.js"
-import { ShoppingList } from "../models/shoppingList.js"
 
 async function index(req, res) {
   try {
