@@ -8,34 +8,33 @@ name: {
     required: true,
 },
 store: {
-        type: String,
-        required: true,
-    },
+    type: String,
+    required: true,
+},
 category: {
-        type: String,
-        required: true,
-    },
+    type: String,
+    required: true,
+},
 quantity: {
-        type: Number,
-        required: true,
-    },
+    type: Number,
+    required: true,
+},
 }, {
 timestamps: true
 })
 
 
 const shoppingListSchema = new Schema({
-    name: {
-        type: String,
-        required: true,
-    },
-    items: [itemSchema],
+name: {
+    type: String,
+    required: true,
+},
+items: [itemSchema],
 
-    owner: {
-        type: Schema.Types.ObjectId, ref: 'User'
-    },
+owner: {
+    type: Schema.Types.ObjectId, ref: 'User'
+},
 })
-
 
 const ShoppingList = mongoose.model("ShoppingList", shoppingListSchema)
 
