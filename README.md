@@ -19,7 +19,7 @@ Project planning link : [Trello Board](https://trello.com/b/IHPtyUYa/taes-trello
 
 > ## Attributions:
 * [ChatGPT](https://chatgpt.com/) : Image on cover page.
-* [Fontawsome](https://fontawesome.com/) : Icons in the app.
+* [Font Awsome](https://fontawesome.com/) : Icons in the app.
 
 > ## Technologies used
 
